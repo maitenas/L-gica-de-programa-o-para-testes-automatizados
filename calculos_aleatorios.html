@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+		document.write("<hr>");
+	}
+
+	function mostra(frase) {
+		document.write("<big>" + frase + "</big>");
+		pulaLinha();
+	}
+
+
+	var sobraAno = 2022 - 1500;
+	var media = sobraAno / 28;
+
+	mostra("De 1500 para cá se passaram " + sobraAno + " anos.");
+	mostra("Desde 1500 tivemos " + Math.round(media) + " gerações de brasileiros;")
+
+
+	
+
+</script>
