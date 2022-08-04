@@ -13,15 +13,24 @@
 
 	var numeroPensado = Math.round(Math.random() * 10);
 
-	var chute = parseInt(prompt("Digite seu chute:"));
+	var tentativas = 0;
 
-	if(chute == numeroPensado) {
+	while(tentativas < 3) {
 
-		mostra("Você acertou!");
+		var chute = parseInt(prompt("Digite seu chute:"));
 
-	}else {
+		if(chute == numeroPensado) {
 
-		mostra("Você errou, o número pensado é: " + numeroPensado);
+			mostra("Você acertou!");
+			break;
+
+		}else {
+
+			mostra("Você errou!");
+
+		}
+
+		tentativas++;
 
 	}
 
